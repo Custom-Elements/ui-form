@@ -1,18 +1,13 @@
-@import "../node_modules/ui-styles/variables";
-@import "../node_modules/ui-styles/borders";
-@import "../node_modules/ui-styles/visual-elements";
 
 :host {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: @pad;
-  ::content {
-    > * {
-      margin-top: @margin;
-    }
-    :first-child {
-      margin-top: 0;
-    }
+  justify-content: center;
+  align-items: center;
+  #handler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

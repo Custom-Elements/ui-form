@@ -10,15 +10,22 @@
       body {
         font-family: "Helvetica Neue", "Helvetica", Arial;
       }
+      input {
+        width: 30em;
+      }
     </style>
   </head>
   <body unresolved>
     <ui-form>
+      <input type="text" autofocus placeholder="Type stuff, look in the console"></input>
     </ui-form>
     <script>
       document.addEventListener('polymer-ready', function() {
         //poke your element here
-      })
+        document.querySelector('ui-form').addEventListener('edit', function() {
+          console.log('save all the things');
+        });
+      });
     </script>
   </body>
 </html>
